@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+body , html{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+*::selection{
+    background-color: rgba(255, 255, 255, 0.811);
+    color: black;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.bounding{
+    width: fit-content;
+    height: fit-content;
+    /* border: 1px solid lime; */
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.section__wrapper{
+    width: 100%;
+    height: 100vh;
+}
+#hero{
+    position: relative;
+}
+#nav{
+    width: 100%;
+    height: 12vh;
+    padding: 2vw 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+#nav_menu button{
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+#hero_heading_block{
+    width: 100%;
+    height: calc(100% - 12vh);
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vw;
+    align-items: flex-start;
+}
+#hero_main_heading{
+    font-size: 4vw;
+}
+#hero_sub_heading{
+    position: relative;
+    padding-top: 1vw;
+    display: flex;
+    align-items: flex-start;
+}
+#hero_sub_heading h3{
+    margin-top: 1.2rem;
+    line-height: 1;
+    font-size: 2vw;
+    justify-self: flex-end;
+}
+#hero_sub_heading i{
+    font-size: 4vw;
+}
+
+.linned_heading h1{
+    font-size: 5vw;
+    height: 10%;
+}
+#intro_body{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+#gallery{
+    width: 100%;
+    height: auto;
+}
+#gallery img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.gallery_rows{
+    padding: 5vw 1%;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+   justify-content: space-evenly;
+
+}
+.gallery_row{
+
+    overflow: hidden;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+}
