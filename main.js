@@ -1,4 +1,3 @@
-function lenisSmoothScroll(){
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
@@ -11,6 +10,3 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
-}
-
-lenisSmoothScroll();

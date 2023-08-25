@@ -42,15 +42,18 @@ async function searchImages(){
    downloadButton.style.display = "inline-block";
    downloadButton.style.margin = "10px";
    downloadButton.style.padding = "8px 16px";
-   downloadButton.style.backgroundColor = "#4CAF50";
-   downloadButton.style.color = "white";
+   downloadButton.style.backgroundColor = "#b7b7b7";
+   downloadButton.style.color = "black";
    downloadButton.style.textDecoration = "none";
-   downloadButton.style.borderRadius = "4px";
+   downloadButton.style.borderRadius = "2px";
    downloadButton.style.transition = "background-color 0.3s ease-in-out";
 
    // Adding hover style for the download button
-   downloadButton.addEventListener("mouseover", () => {
+   downloadButton.addEventListener("mouseenter", () => {
        downloadButton.style.backgroundColor = "#45a049";
+   });
+   downloadButton.addEventListener("mouseleave", () => {
+       downloadButton.style.backgroundColor = "#b7b7b7";
    });
 
        // Update the event listener for downloadButton

@@ -2,22 +2,31 @@
 <html lang="en">
     <head>
         <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
-       <title>Image Search Engine - Easy Tutorials</title>
+       <title>Try Text2Pic</title>
+       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
         <link rel= "stylesheet" href="style.css">
    </head>
    <body>
-   <h1>Text To Image Generator</h1>
-    <form id="search-form">
-      <input type= "text" id="search-box" placeholder= "Search anything here...">
-     <button>Search</button>
-   </form>
-    <div id="search-result" ></div>
-    <button id="show-more-btn" >Show more</button>
-<!-- Add this HTML code inside the <body> of your HTML file -->
-    <div id="modal" class="modal">
-        <span class="close-button">&times;</span>
-        <img id="modal-image" class="modal-image" src="" alt="Preview Image">
-        <a id="modal-download-button" class="modal-download-button" href="" target="_blank" download>Download</a>
+    <div id="main">
+        <div id="search_block">
+            <h1>Text2Pic</h1>
+            <form id="search-form">
+                <input type= "text" id="search-box" placeholder= "Search high resolution pictures">
+                <!-- Add changes as files are  moved  -->
+               <button><img src="../images/search.png" alt="search"></button>     
+             </form>
+        </div>
+
+         <div id="search-result" ></div>
+         <div id="showmore_button_wrapper">
+             <button id="show-more-btn" >Show more</button>
+         </div>
+     <!-- Add this HTML code inside the <body> of your HTML file -->
+         <div id="modal" class="modal">
+             <span class="close-button">&times;</span>
+             <img id="modal-image" class="modal-image" src="" alt="Preview Image">
+             <a id="modal-download-button" class="modal-download-button" href="" target="_blank" download>Download</a>
+         </div>
     </div>
 
     
