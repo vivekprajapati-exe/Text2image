@@ -6,34 +6,43 @@
     <title>Text2Pic</title>
     <!-- iconset -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div id="main">
-        <!-- <div id="menu_sidebar">
+        <div id="menu_sidebar">
             <div id="sidebar_wrapper">
                 <div id="sidebar_nav">
-                    <ul>
+                    <ul class="navbar-list">
                         <li><a href="#hero">Home</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#tryout">Try Text2Pic</a></li>
+                        <div class="line"></div>
                     </ul>
                 </div>
                 <div id="sidebar_footer">
                     <p>&copy; All rights reserved . 2023</p>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div id="hero" class="section__wrapper">
             <div class="bordercircle"></div>
             <div id="nav">
                 <div id="nav_site"><h2><a href="./index.html">Text2Pic</a></h2></div>
-                <div id="nav_menu"><button>Menu <i class="ri-add-line"></i></button></div>
+                <div id="nav_menu" >
+                    <div class="menu_button toggle_btn ">
+                        <p>Menu</p>  
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+                        style="fill:#FFFFFF;">
+                        <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+                        </svg>
+                    </div>
+                </div>
             </div>
             <div id="hero_heading_block">
                 <div id="hero_main_heading">
-                    <h1>Transform Words Into Stunning Images</h1>
+                        <h1>Transform Words Into Stunning Images</h1>
                 </div>
                 <div id="hero_sub_heading">
                     <div class="bounding">
@@ -90,7 +99,7 @@
                 <h1>Start your Journey turning words into images !</h1>
             </div>
             <div id="tryout_button">
-                <a href="./text2pic/index.html" target="_blank">
+                <a href="./trytext2pic.html" target="_blank">
                     <button href="" >Try Text2Pic<i class="ri-arrow-right-up-line trybutton"></i></button>
                 </a>
             </div>
@@ -114,6 +123,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- js file made by us -->
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

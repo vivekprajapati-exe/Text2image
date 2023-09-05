@@ -37,7 +37,6 @@ a{
 .bounding{
     width: fit-content;
     height: fit-content;
-    /* border: 1px solid lime; */
 }
 .line{
     width: 100%;
@@ -65,49 +64,73 @@ a{
 
 
 }
+
 #nav{
+    background-color: rgba(0, 0, 0, 0.621);
+    /* box-shadow: 0px 10px 10px rgba(35, 35, 35, 0.303); */
+    /* border: 1px solid red ; */
+    position: fixed;
     width: 100%;
     height: 12vh;
     padding: 2vw 1vw;
     display: flex;
     justify-content: space-between;
+    z-index: 9;
 }
-#nav_menu button{
-    background-color: black;
-    border: none;
+#nav_menu{
+    width:8vw;
+    /* border: 1px solid gainsboro; */
+}
+#nav_menu .menu_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     font-size: 1.4rem;
 }
+
+.menu_button svg{
+    width: 20px;
+    height: min-content;
+    transform: rotate(45deg);
+    transition: all ease-in 1s;
+}
+.active svg{
+    transform: rotate(0deg);
+}
 #menu_sidebar{
    position: fixed;
-   top: 0;
+   top: -100%;
    right: 0;
-   width: 40vw;
+   width: 100vw;
    height: 100vh;
-   display: flex;
-   /* display: none; */
-   align-items:center;
-   background-color: black;
-   border: 1px solid white;
-   z-index: 1;
-   padding: 5vw 2vw;
+   background-color: rgba(0, 0, 0, 0.83);
+   z-index: 3;
+   padding: 1vw 0vw;
+   opacity: 1;
+   
+}
+#sidebar_nav{
+    padding-top: 10vw;
 }
 #sidebar_wrapper ul{
     list-style: none;
 }
+#sidebar_wrapper ul li{
+    opacity: 1;
+}
 #sidebar_wrapper a  {
-    font-size:3rem;
+    padding-left: 2vw;
+    font-size:4rem;
 }
 #sidebar_footer{
+    padding-top:18vw ;
+    padding-left: 4vw;
+    opacity: .7;
     font-size: 2rem;
 }
-
 #sidebar_footer{
     align-self: flex-end;
-}
-.nav_menuspan{
-    display: inline-block;
-    z-index: 99999;
 }
 
 #hero_heading_block{
@@ -115,12 +138,16 @@ a{
     height: calc(100% - 12vh);
     display: flex;
     flex-direction: column;
-    padding-top: 5vw;
+    padding-top: 13vw;
     padding-left: 3vw;
     align-items: flex-start;
 }
 #hero_main_heading{
     font-size: 4vw;
+    /* overflow-y: hidden; */
+}
+#hero_main_heading  h1{
+    white-space: normal;
 }
 #hero_sub_heading{
     position: relative;
@@ -137,9 +164,17 @@ a{
 #hero_sub_heading i{
     font-size: 4vw;
 }
+@media screen and (max-width:900px) {
+    #nav_menu{
+        width: 20vw;
+    }
+    #nav_menu .menu_button{
+        font-size: 1rem;
+    }
+}
 @media screen and (max-width:768px) {
     #hero_heading_block{
-        padding-top: 20vw;
+        padding-top: 24vw;
         
     }
     #hero_sub_heading{
@@ -155,7 +190,7 @@ a{
 }
 @media screen and (max-width:500px){
     #hero_heading_block{
-        padding-top: 25vw;
+        padding-top: 28vw;
     }
     #hero_main_heading{
         font-size: 5vw;
@@ -164,7 +199,7 @@ a{
 }
 @media screen and (max-width:400px){
     #hero_heading_block{
-        padding-top: 40vw;
+        padding-top: 50vw;
     }
 }
 
@@ -174,7 +209,6 @@ a{
 }
 .linned_heading{
     background-color: black;
-    z-index:99;
 }
 .linned_heading h1{
     font-size: 5vw;
